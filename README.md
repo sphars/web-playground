@@ -1,2 +1,2 @@
-# web-playground
-A holding repo for testing out web stuff
+# Web Playground
+A place to play around with different web examples, from Bootstrap and beyond.
