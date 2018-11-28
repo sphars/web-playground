@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../favicon.ico">
+    <title>BS Sidebar Style 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="sidebar2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /></head>
+
+    <script defer src="~/_sidebar2.js"></script>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Sidebar Nav Example</a>
+    </nav>
+    <div class="wrapper d-flex w-100">
+        <!-- sidebar -->
+        <nav id="sidebar" class="text-white">
+            <div class="list-group list-group-flush">
+                <div class="list-group-item sidebar-separator-title text-muted">
+                    <small>MAIN MENU</small>
+                </div>
+
+                <!-- menu item and submenu -->
+                <a class="list-group-item list-group-item-action bg-dark text-white d-flex align-items-center" data-toggle="collapse" href="#submenu1" aria-expanded="false">
+                    <span class="fa fa-exchange mr-3"></span>
+                    <span>Menu Group 1</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </a>
+                <div id="submenu1" class="list-group collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 1</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 2</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 3</a>
+                </div> <!-- /menu item and submenu -->
+
+                <!-- menu item and submenu -->
+                <a class="list-group-item list-group-item-action bg-dark text-white d-flex align-items-center" data-toggle="collapse" href="#submenu2" aria-expanded="false">
+                    <span class="fa fa-exchange mr-3"></span>
+                    <span>Menu Group 2</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </a>
+                <div id="submenu2" class="list-group collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 1</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 2</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 3</a>
+                </div> <!-- /menu item and submenu -->
+
+                <!-- separator -->
+                <div class="list-group-item sidebar-separator-title text-muted">
+                    <small>ADMIN</small>
+                </div>
+
+                <!-- menu item and submenu -->
+                <a class="list-group-item list-group-item-action bg-dark text-white d-flex align-items-center" data-toggle="collapse" href="#submenu3" aria-expanded="false">
+                    <span class="fa fa-exchange mr-3"></span>
+                    <span>Menu Group 3</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </a>
+                <div id="submenu3" class="list-group collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 1</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 2</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Submenu Item 3</a>
+                </div> <!-- /menu item and submenu -->
+
+                <!-- menu item -->
+                <a class="list-group-item list-group-item-action bg-dark text-white d-flex align-items-center" href="#">
+                    <span class="fa fa-cog mr-3"></span>
+                    <span>Menu Item 1</span>
+                </a>
+
+                <!-- separator w/o text -->
+                <div class="list-group-item sidebar-separator"></div>
+
+                <!-- menu item -->
+                <a id="sidebarCollapse" data-toggle="sidebar-collapse" class="list-group-item list-group-item-action bg-dark text-white d-flex align-items-center" href="#">
+                    <span id="collapse-icon" class="fa fa-angle-double-left mr-3"></span>
+                    <span class="sidebar-collapse-text">Collapse Menu</span>
+                </a>
+
+            </div>
+        </nav>
+
+        <!-- page content -->
+        <div id="content">
+            <button class="btn btn-info" id="sidebarCollapse" type="button">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+            <h1>Page content here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="table-responsive-xl">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                            <th>Header 2</th>
+                            <th>Header 2</th>
+                            <th>Header 2</th>
+                            <th>Extra Long Header For Testing 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Extra extra extra longlonglonglonglonglong table data cell 1</td>
+                            <td>Extra extra extra longlonglonglonglonglong table data cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 1</td>
+                            <td>Extra extra extra long table data cell2</td>
+                            <td>Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 2</td>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Extra extra extra long table data cell 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // $("#sidebar").mCustomScrollbar({
+            //     theme: "minimal"
+            // });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('inactive');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
