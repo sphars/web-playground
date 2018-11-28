@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="sidebar1.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /></head>
 <body>
     <div class="wrapper">
         <!-- sidebar -->
@@ -19,18 +18,20 @@
                 <h3 class="text-center">Main App Name</h3>
             </div>
 
-            <ul class="list-group components">
-                <li class="list-group-item sidebar-separator-title text-uppercase text-muted">
+            <div class="list-group list-group-flush components">
+                <div class="list-group-item sidebar-separator-title text-uppercase text-muted">
                     <small>Main Menu</small>
-                </li>
-                <li class="list-group-item bg-dark active">
-                    <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Submenu 1</a>
-                    <ul class="collapse list-unstyled" id="submenu1">
-                        <li><a href="#">Menu Item 1</a></li>
-                        <li><a href="#">Menu Item 2</a></li>
-                        <li><a href="#">Menu Item 3</a></li>
-                    </ul>
-                </li>
+                </div>
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="list-group-item bg-dark">
+                    <span class="fa fa-exchange fa-fw mr-2"></span>
+                    Submenu 1
+                    <span class="submenu-icon ml-auto"></span>
+                </a>
+                <ul class="collapse list-unstyled bg-dark" id="submenu1">
+                    <li><a href="#">Menu Item 1</a></li>
+                    <li><a href="#">Menu Item 2</a></li>
+                    <li><a href="#">Menu Item 3</a></li>
+                </ul>
                 <li class="list-group-item bg-dark">
                     <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Submenu 2</a>
                     <ul class="collapse list-unstyled" id="submenu2">
@@ -48,7 +49,7 @@
                 <li class="list-group-item bg-dark">
                     <a href="#">Main Menu Item 2</a>
                 </li>
-            </ul>
+            </div>
         </nav>
 
         <!-- page content -->
