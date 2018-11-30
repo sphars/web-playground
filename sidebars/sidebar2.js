@@ -3,19 +3,21 @@
     This script provides the client-side functionality for the sidebar nav collapse.
 */
 
-$(window).resize(function(){
+$(window).on("load resize", responsiveViewUpdate);
+
+function responsiveViewUpdate() {
     var viewportWidth = $(window).width();
 
     // hide sidebar on smaller than 769px
-    if (viewportWidth < 769){
+    if (viewportWidth < 769) {
         $('#sidebar').addClass('inactive');
         $('#content').addClass('active');
     }
-    else{
+    else {
         $('#sidebar').removeClass('inactive');
         $('#content').removeClass('active');
     }
-});
+}
 
 $('#sidebarCollapse').on('click', function () {
     $('#sidebar').toggleClass('inactive'); // toggle sidebar
